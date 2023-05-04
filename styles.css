@@ -12,6 +12,7 @@
     font-family: 'Open Sans', sans-serif;*/
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
     body {
     font-family: 'Open Sans', sans-serif;
@@ -23,7 +24,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 3rem;
 }    
 p{
-    font-size: 5rem;
+    font-size: 3rem;
 }
 
 .main-background{
@@ -35,11 +36,13 @@ p{
 }
 .main-whitebackground{
     color: var(--color-white);
+
 }
 .main-content{
-    max-width: 1200px;
+    max-width: 120rem;
     margin: 0 auto;
     padding: var(--gap);
+
 }
 .section{
     min-height: 100vh;
@@ -51,7 +54,7 @@ p{
     right: 0;
     width: 100%;
     background-color: var(--color-white);
-    border-bottom: 1px solid var(--color-grey) ;
+    border-bottom: 0.01rem solid var(--color-grey) ;
     
 }
 .menu-content{
@@ -88,4 +91,30 @@ a{
 .menu ul a:hover::after{
     width: 50%;
     left: 25%;
-}    
+}
+.intro-content{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    height: 100vh;
+}
+.intro-text-content, .intro-img{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+.intro-img img{
+    max-width: 100%;
+    height: auto;
+}
+.bixo-lindo-content{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    height: 100vh;
+    max-width: 68rem;
+    text-align: center;
+}
+
+p{
+    margin-bottom: 3rem;
+}
