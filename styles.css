@@ -4,9 +4,13 @@
     --color-grey: #EEEEEE;
     --gap:3rem;
 }
+*::placeholder{
+    font-size: 2rem;
+}
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 /* font-family: 'Montserrat', sans-serif;
     font-family: 'Open Sans', sans-serif;*/
@@ -36,6 +40,7 @@ p{
 }
 .main-whitebackground{
     color: var(--color-white);
+    color: black;
 
 }
 .main-content{
@@ -117,4 +122,62 @@ a{
 
 p{
     margin-bottom: 3rem;
+}
+.cadastro-form{
+    grid-column: span 2;
+}
+.cadastro-form .form-grid{
+    border: none;
+    display: flex;
+    flex-flow: row wrap;
+}
+.form-group{
+    flex: 1 1 320px;
+    padding-right: 1rem;
+}
+.form-group label{
+    display: block;
+}
+.form-group input, .form-group textarea{
+    border: none;
+    padding: 1.5rem 2rem;
+    width: 100%;
+} 
+body .full-width{
+    width: 100%;
+    flex: 1 1 100%;
+}
+.form-group button{
+    padding: 2rem;
+    border-radius: 2rem;
+    
+}
+.form-group button:hover{
+    background-color: blue;
+    transition: background-color 0.3s ease-in-out
+}
+.grid-one{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    height: 100vh;
+      
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 360px;
+    gap: var(--gap);
+    
+}
+
+.intro-content-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    
+}
+
+.galery-img img:hover{
+    transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
 }
